@@ -5,9 +5,10 @@
   "main": "bindings/node",
   "types": "bindings/node",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node-gyp-build",
-    "prebuildify": "prebuildify --napi --strip"
+    "prestart": "tree-sitter build --wasm",
+    "start": "tree-sitter playground",
+    "test": "node --test bindings/node/*_test.js"
   },
   "author": "Camden Cheek <camden@ccheek.com>",
   "license": "ISC",
@@ -34,5 +35,11 @@
     "bindings/node/*",
     "queries/*",
     "src/**"
+  ],
+  "tree-sitter": [
+    {
+      "scope": "source.dockerfile",
+      "injection-regex": "^dockerfile$"
+    }
   ]
 }
