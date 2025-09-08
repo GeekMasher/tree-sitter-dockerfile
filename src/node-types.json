@@ -1054,8 +1054,7 @@
   },
   {
     "type": "comment",
-    "named": true,
-    "extra": true
+    "named": true
   },
   {
     "type": "escape_sequence",
@@ -1075,8 +1074,7 @@
   },
   {
     "type": "line_continuation",
-    "named": true,
-    "extra": true
+    "named": true
   },
   {
     "type": "mount",

@@ -33,10 +33,10 @@
   },
   "bindings": {
     "c": true,
-    "go": true,
-    "node": true,
-    "python": true,
+    "go": false,
+    "node": false,
+    "python": false,
     "rust": true,
-    "swift": true
+    "swift": false
   }
 }
